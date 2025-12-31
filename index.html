@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ledger | Daud Dairy Products</title>
+    <meta name="description"
+        content="Manage your daily sales and expenditures with ease. Client-wise and monthly reports available.">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#6366f1">
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="app">
+        <nav class="sidebar">
+            <div class="logo">
+                <img src="./logo.jpg" alt="Logo" class="logo-image">
+                <span class="logo-text">Ledger</span>
+            </div>
+            <ul class="nav-links">
+                <li class="active" data-view="dashboard">
+                    <span class="icon">📊</span> Dashboard
+                </li>
+                <li data-view="sales">
+                    <span class="icon">💰</span> Sales
+                </li>
+                <li data-view="expenditure">
+                    <span class="icon">📉</span> Expenditure
+                </li>
+                <li data-view="suppliers">
+                    <span class="icon">🚛</span> Suppliers
+                </li>
+                <li data-view="clients">
+                    <span class="icon">👥</span> Clients
+                </li>
+                <li data-view="reports">
+                    <span class="icon">📋</span> Reports
+                </li>
+                <li data-view="settings">
+                    <span class="icon">⚙️</span> Settings
+                </li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <header>
+                <div class="header-info">
+                    <h1 id="view-title">Daud Dairy Products</h1>
+                    <p id="current-date"></p>
+                </div>
+                <div class="header-actions">
+                    <button id="add-sale-btn" class="btn btn-primary">+ New Sale</button>
+                    <button id="add-exp-btn" class="btn btn-secondary">+ New Expense</button>
+                </div>
+            </header>
+
+            <div id="view-container">
+                <!-- Views injected here -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Modal Overlay -->
+    <div id="modal-container" class="modal-overlay">
+        <div class="modal">
+            <div class="modal-header">
+                <h2 id="modal-title">New Entry</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="entry-form">
+                    <!-- Form injected here -->
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js').catch(e => console.log('SW failed', e));
+            });
+        }
+    </script>
+</body>
+
+</html>

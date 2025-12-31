@@ -1,0 +1,146 @@
+{
+  "sales": [
+    {
+      "id": "1",
+      "date": "2025-12-01",
+      "client": "Alice Smith",
+      "product": "Milk",
+      "quantity": "10",
+      "unit": "Liters",
+      "amount": "2000",
+      "timestamp": 1767161071608
+    },
+    {
+      "id": "2",
+      "date": "2025-12-05",
+      "client": "Bob Johnson",
+      "product": "Butter",
+      "quantity": "2",
+      "unit": "kg",
+      "amount": "2400",
+      "timestamp": 1767161071608
+    },
+    {
+      "id": "1767162140959",
+      "date": "2025-12-31",
+      "amount": "660.00",
+      "product": "Buffalo Milk",
+      "quantity": "3",
+      "price": "220",
+      "timestamp": 1767162140959,
+      "client": "Ahsaan Mahmood",
+      "unit": "Liters"
+    },
+    {
+      "id": "1767162177238",
+      "date": "2025-12-30",
+      "amount": "1320.00",
+      "product": "Buffalo Milk",
+      "quantity": "6",
+      "price": "220",
+      "timestamp": 1767162177238,
+      "client": "Ahsaan Mahmood",
+      "unit": "Liters"
+    },
+    {
+      "id": "1767164900383",
+      "date": "2025-12-29",
+      "amount": "660.00",
+      "product": "Buffalo Milk",
+      "quantity": "3",
+      "unit": "Liter",
+      "price": "220",
+      "timestamp": 1767164900383,
+      "client": "Ahsaan Mahmood"
+    },
+    {
+      "id": "1767165205216",
+      "date": "2025-12-27",
+      "amount": "660.00",
+      "product": "Buffalo Milk",
+      "quantity": "3",
+      "unit": "Liter",
+      "price": "220",
+      "timestamp": 1767165205216,
+      "client": "Ahsaan Mahmood"
+    },
+    {
+      "id": "1767165232399",
+      "date": "2025-12-31",
+      "amount": "360.00",
+      "product": "Cow Milk",
+      "quantity": "2",
+      "unit": "Liter",
+      "price": "180",
+      "timestamp": 1767165232399,
+      "client": "Zubair"
+    }
+  ],
+  "expenses": [
+    {
+      "id": "e1",
+      "date": "2025-12-02",
+      "amount": "8000",
+      "product": "Cow Milk",
+      "quantity": "50",
+      "timestamp": 1767161637438,
+      "supplier": "Ashraf Saif"
+    },
+    {
+      "id": "1767164940087",
+      "date": "2025-12-28",
+      "amount": "2200.00",
+      "product": "Khal",
+      "quantity": "1",
+      "unit": "bag",
+      "price": "2200",
+      "timestamp": 1767164940087,
+      "supplier": "Ashraf Saif"
+    }
+  ],
+  "clients": [
+    "Alice Smith",
+    "Bob Johnson",
+    "Ahsaan Mahmood",
+    "Zubair"
+  ],
+  "settings": {
+    "appName": "Daud Dairy Products",
+    "phone": "0303 4642202",
+    "products": [
+      {
+        "name": "Buffalo Milk",
+        "price": 220,
+        "unit": "Liter"
+      },
+      {
+        "name": "Cow Milk",
+        "price": 180,
+        "unit": "Liter"
+      },
+      {
+        "name": "Ghee",
+        "price": 0,
+        "unit": "Unit"
+      },
+      {
+        "name": "Butter",
+        "price": 1500,
+        "unit": "Kg"
+      },
+      {
+        "name": "Wanda",
+        "price": 3400,
+        "unit": "Bag"
+      },
+      {
+        "name": "Khal",
+        "price": 2200,
+        "unit": "bag"
+      }
+    ],
+    "suppliers": [
+      "Ashraf Saif"
+    ]
+  }
+}
